@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-  <title>waterpuzzle</title>
+  <title>Sudoku</title>
 </head>
 
 <body style="margin: 0px; overflow: hidden;" oncontextmenu="return false;">
@@ -14,18 +14,18 @@
 
   <div id="progress-bar" style="position: absolute; left: 0%; right: 100%; top: 49%; bottom: 49%; background-color: white;"></div>
 
-  <script src="Build/VK.loader.js"></script>
+  <script src="Build/Sudoku-VK.loader.js"></script>
   <script>
     const settings = {
-      dataUrl: "Build/7e50cec12b25b494be9b70156ac03a1e.data.unityweb",
-      frameworkUrl: "Build/0cf5bac9003d52bee67c1ff8f0f24a9b.js.unityweb",
-      codeUrl: "Build/7dd0fd05a3f7221f3cca15c5795031a8.wasm.unityweb",
+      dataUrl: "Build/2c20234d45fc787417c6b1064d7156d3.data.unityweb",
+      frameworkUrl: "Build/47f38d10e17505927eda125c3af7bf82.js.unityweb",
+      codeUrl: "Build/3eeba40d6e11ca779cdcac380b16a799.wasm.unityweb",
       streamingAssetsUrl: "StreamingAssets",
-      companyName: "Unconditional Games",
-      productName: "waterpuzzle",
+      companyName: "DefaultCompany",
+      productName: "Sudoku",
       productVersion: "0.1",
       matchWebGLToCanvasSize: true,
-      // devicePixelRatio: 2, // Uncomment this line to enable anti-aliasing
+      devicePixelRatio: 1.5,
     };
 
     const progressBar = document.querySelector("#progress-bar");
@@ -40,9 +40,8 @@
       });
     }, 500); // Wait half a second before loading. Makes page more responsive on reload.
   </script>
-
   <script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
-  <script> vkBridge.send('VKWebAppInit'); </script>
+<script> vkBridge.send('VKWebAppInit'); </script>
 </body>
 
 </html>
